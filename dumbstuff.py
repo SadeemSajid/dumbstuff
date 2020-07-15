@@ -1,4 +1,6 @@
-# sort array in asc or desc
+import random
+
+# sort list in asc or desc
 def sortlist(rawlist: list, operator: str, ifprint: bool):
     looped = 0
     done = 0
@@ -41,3 +43,24 @@ def sortlist(rawlist: list, operator: str, ifprint: bool):
         print(sortedList)
 
     return sortedList
+
+
+# jumble list elements randomly
+def jumblelist(rawlist: list):
+    index = 0
+    counter = 0
+    jumbledlist = []
+
+    jumble = True
+    while counter < len(rawlist):
+        i1 = random.randint(0, len(rawlist) - 1)
+        i2 = random.randint(0, len(rawlist) - 1)
+        temp = rawlist[i1]
+        rawlist[i1] = rawlist[i2]
+        rawlist[i2] = temp
+        counter += 1
+
+    jumbledlist = rawlist
+    return jumbledlist
+
+
