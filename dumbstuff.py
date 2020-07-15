@@ -3,6 +3,7 @@ def sortlist(rawlist: list, operator: str, ifprint: bool):
     looped = 0
     done = 0
     index = 0
+    unsortedlist = rawlist
     sortedList = []
 
     while done == 0:
@@ -22,7 +23,7 @@ def sortlist(rawlist: list, operator: str, ifprint: bool):
                 done = 1
             sortedList = rawlist
         # descending sort
-        if operator == ">":
+        elif operator == ">":
             while index < len(rawlist) - 1:
                 if rawlist[index] < rawlist[index + 1]:
                     temp = rawlist[index + 1]
@@ -33,7 +34,9 @@ def sortlist(rawlist: list, operator: str, ifprint: bool):
             if looped == 0:
                 done += 1
             sortedList = rawlist
-
+        else:
+            done = 1
+            sortedList = unsortedlist
     if ifprint:
         print(sortedList)
 
