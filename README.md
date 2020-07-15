@@ -9,12 +9,23 @@ DOCUMENTATION
 
 (by order of how I wrote the code)
 
-1. sortlist(list, operator: str, ifprint: bool)
+    sortlist(list, operator: str, ifprint: bool)
 
 This function sorts the list passed into it, according to the operator specified: "<" sorts the list in ascending order, ">" sorts the list in descending order.
 The ifprint bool value (True/False) dictates whether or not the the sorted list will be printed out to the screen; setting it to false will result in no print.
 
 Example:
 
-  sortedList = dumbstuff.sortlist(mylist, "<", ifprint=False)
+  `sortedList = dumbstuff.sortlist(mylist, "<", ifprint=False)`
+
 Incorrect operator leads to the array not being sorted at all, the passed list will be returned as it was.
+
+    jumblelist(list)
+   
+This function jumbles up the index positions of the passed list, and swaps it with random positions.
+
+Example:
+
+`jumbledlist = dumbstuff.jumblelist(mylist)`
+
+ 
