@@ -1,7 +1,8 @@
 import random
 
+
 # sort list in asc or desc
-def sortlist(rawlist: list, operator: str, ifprint: bool):
+def sortlist(rawlist: list, operator: str):
     looped = 0
     done = 0
     index = 0
@@ -39,9 +40,6 @@ def sortlist(rawlist: list, operator: str, ifprint: bool):
         else:
             done = 1
             sortedList = unsortedlist
-    if ifprint:
-        print(sortedList)
-
     return sortedList
 
 
@@ -62,5 +60,3 @@ def jumblelist(rawlist: list):
 
     jumbledlist = rawlist
     return jumbledlist
-
-
