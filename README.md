@@ -45,3 +45,12 @@ Example:
 `jumbledlist = dumbstuff.jumblelist(mylist)`
 
  
+    inttochar(int)
+
+Converts the passed integer into a string of corresponding alphabets.
+
+For example:
+
+`myStr = dumbstuff.inttochar(1234)`
+
+`output: bcdf`

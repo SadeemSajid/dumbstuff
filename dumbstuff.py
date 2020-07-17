@@ -1,4 +1,5 @@
 import random
+import string
 
 
 # number list upto 9
@@ -72,3 +73,14 @@ def jumblelist(rawlist: list):
 
     jumbledlist = rawlist
     return jumbledlist
+
+
+# converts integers to characters
+def inttochar(rawint: int):
+    char = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p',
+         'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+    rawstr = str(rawint)
+    newStr = ""
+    for x in rawstr:
+        newStr += char[int(x)]
+    return newStr
